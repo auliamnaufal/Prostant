@@ -15,25 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./public/icon/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="./public/icon/favicon.svg" type="image/x-icon" />
     <title>Home | Prostant</title>
   </head>
   <body>
     <nav>
-      <img src="./public/icon/logo.svg" alt="Prostant logo" class="nav_brand">
+      <img src="./public/icon/logo.svg" alt="Prostant logo" class="nav_brand" />
       <ul class="navbar">
         <li class="nav_item nav_active">
-          <img src="./public/icon/Home.svg" class="home" alt="Home Icon" />
+          <img src="./public/icon/Home.svg" id="home" alt="Home Icon" />
         </li>
         <li class="nav_item">
-          <img
-            src="./public/icon/Paper.svg"
-            class="task"
-            alt="Paper.svg Icon"
-          />
+          <img src="./public/icon/Paper.svg" id="task" alt="Paper.svg Icon" />
         </li>
       </ul>
     </nav>
+
     <div class="container">
       <main id="maincontent">
         <header class="header">
@@ -54,41 +51,152 @@
 
               <div class="body_list">
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 70%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 70%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Sun</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 60%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 70%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Mon</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 30%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 30%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Tue</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 50%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 50%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Wed</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 90%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 90%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Thu</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 100%, #EBEBEB 20% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 100%,
+                        #ebebeb 20% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Fri</h3>
                 </div>
 
                 <div class="body_item">
-                  <div class="item_data" style="background: linear-gradient(to top, #2CC369 10%, #EBEBEB 10% 40%);"></div>
+                  <div
+                    class="item_data"
+                    style="
+                      background: linear-gradient(
+                        to top,
+                        #2cc369 10%,
+                        #ebebeb 10% 40%
+                      );
+                    "
+                  ></div>
                   <h3 class="item_day">Sat</h3>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="home_body">
+          <div class="col">
+            <div class="assignment">
+              <div class="assignment_header">
+                <h2>Your Assignment</h2>
+                <a href="#">See More &#8594;</a>
+              </div>
+              <div class="assignment_list">
+                <div class="assignment_item bindo">
+                  <div class="assignment_item_header">
+                    <h3 class="assignment_item_title">Membuat Cerita Pendek Tentang Menjaga Kebersamaan</h3>
+                    <p class="assignment_item_subject">Bahasa Indonesia</p>
+                  </div>
+                  <div class="assignment_detail">
+                    <a href="#" class="see_detail">See Assignment</a>
+                  </div>
+                </div>
+
+                <div class="assignment_item matematika">
+                  <div class="assignment_item_header">
+                    <h3 class="assignment_item_title">Menghitung Luas Bangun Datar</h3>
+                    <p class="assignment_item_subject">Matematika</p>
+                  </div>
+                  
+                  <div class="assignment_detail">
+                    <a href="#" class="see_detail">See Assignment</a>
+                  </div>
+                </div>
+
+                <div class="assignment_item biologi">
+                  <div class="assignment_item_header">
+                    <h3 class="assignment_item_title">Membuat Laporan Penelitian Tentang Kupu-Kupu</h3>
+                    <p class="assignment_item_subject">Biologi</p>
+                  </div>
+                  <div class="assignment_detail">
+                    <a href="#" class="see_detail">See Assignment</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col">
+
+          </div>
+
           </div>
         </section>
 

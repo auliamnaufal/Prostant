@@ -106,7 +106,7 @@ nav .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px 30px 0 0;
+	margin-top: 20px;
 }
 
 .statistic .panel {
@@ -116,8 +116,8 @@ nav .navbar {
 
 .panel_header {
 	margin: 32px 0 0 24px;
-	font-size: 1.5rem;
 	font-weight: 600;
+	font-size: 20px;
 }
 
 /*
@@ -144,8 +144,8 @@ nav .navbar {
 }
 
 .value_list .value_item {
-	font-size: 1.2rem;
 	font-weight: 500;
+	font-size: 1rem;
 	color: rgb(34, 34, 34);
 	margin-bottom: 15px;
 }
@@ -194,5 +194,142 @@ nav .navbar {
 	width: 3.5vw;
 	height: 170px;
 	border-radius: 20px;
+}
+
+/*
+*	Your Assignment
+*/
+
+.home_body {
+	width: 100%;
+	min-height: 300px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 50px;
+	margin-top: 50px;
+}
+
+.assignment {
+	width: 100%;
+	height: fit-content;
+	padding: 24px;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.assignment_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+.assignment_header h2 {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.assignment_header a {
+	font-weight: 600;
+	font-size: 12px;
+	color: #091353;
+	text-decoration: none;
+}
+
+.assignment_list {
+	width: 100%;
+	height: fit-content;
+}
+
+.assignment_item {
+	min-height: 90px;
+	position: relative;
+	border-radius: 10px;
+	transition: all .3s;
+}
+
+.assignment_item:not(:first-of-type) {
+	margin-top: 8px;
+}
+
+.assignment_item_header {
+	width: 100%;
+	padding: 0 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.assignment_item_title {
+	width: 410px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.assignment_item_subject {
+	font-weight: 500;
+	font-size: 12px;
+	color: #7D7D7D;
+}
+
+.assignment_item:hover {
+	z-index: 99;
+	margin-bottom: 50px;
+}
+
+.assignment_item:hover .assignment_detail {
+	transform: translateY(80px);
+	opacity: 1;
+}
+
+.assignment_detail {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 10px 10px;
+	transform: translateY(20px);
+	transition: opacity .3s, transform .3s;
+	opacity: 0;
+}
+
+.see_detail,
+.see_detail:visited {
+	font-weight: 500;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+}
+
+.bindo {
+	background-color: #AFE7EE;
+}
+
+.bindo .assignment_detail {
+	background-color: #9FD1D8;
+}
+
+.matematika {
+	background-color: #DEEEAF;
+}
+
+.matematika .assignment_detail {
+	background-color: #D2DFAE;
+}
+
+.biologi {
+	background-color: #EED6F4;
+}
+
+.biologi .assignment_detail {
+	background-color: #E4CCEA;
 }
 
