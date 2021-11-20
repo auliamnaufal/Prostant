@@ -211,7 +211,7 @@ nav .navbar {
 
 .assignment {
 	width: 100%;
-	height: fit-content;
+	height: 423px;
 	padding: 24px;
 	background-color: white;
 	border-radius: 15px;
@@ -238,7 +238,8 @@ nav .navbar {
 
 .assignment_list {
 	width: 100%;
-	height: fit-content;
+	max-height: 300px;
+	overflow-y: scroll;
 }
 
 .assignment_item {
@@ -342,9 +343,9 @@ nav .navbar {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr;
-	border-top-left-radius: 34px;
-  border-top-right-radius: 34px;
-  padding: 20px 20px;
+	border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  padding: 20px;
 }
 
 .calendar_header h2 {
@@ -478,7 +479,7 @@ nav .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
 	place-items: center;
-	border-radius: 0 0 34px 34px;
+	border-radius: 0 0 17px 17px;
   padding: 20px 20px;
 }
 
@@ -506,4 +507,23 @@ nav .navbar {
 
 .calendar_footer .current_day::before {
 	background-color: #091353;
+}
+
+.class {
+	width: 100%;
+	height: fit-content;
+	padding: 24px;
+	background-color: #414D64;
+	border-radius: 15px;
+}
+
+.class_heading {
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;
+}
+
+.class_list {
+	width: 100%;
+	height: fit-content;
 }
