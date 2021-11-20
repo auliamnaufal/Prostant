@@ -32,7 +32,7 @@ nav {
 
 .container #maincontent {
   background-color: var(--primary);
-	padding: 40px 50px 40px 120px;
+	padding: 40px 100px 40px 120px;
 	z-index: 99;
 }
 
