@@ -100,7 +100,6 @@ nav .navbar {
 .statistic {
 	background-color: #fff;
 	min-height: 300px;
-	max-width: 1200px;
 	border-radius: 20px;
 	padding: 15px 20px 0;
 	display: flex;
@@ -204,7 +203,7 @@ nav .navbar {
 	width: 100%;
 	min-height: 300px;
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: calc(50% - 25px) calc(50% - 25px);
 	grid-gap: 50px;
 	margin-top: 50px;
 }
@@ -238,8 +237,9 @@ nav .navbar {
 
 .assignment_list {
 	width: 100%;
-	max-height: 300px;
+	max-height: 330px;
 	overflow-y: scroll;
+	border-radius: 17px;
 }
 
 .assignment_item {
