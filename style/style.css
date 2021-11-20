@@ -518,6 +518,7 @@ nav .navbar {
 	grid-column: 1 / 3;
 }
 
+
 .class_heading {
 	font-weight: 600;
 	font-size: 20px;
@@ -527,4 +528,68 @@ nav .navbar {
 .class_list {
 	width: 100%;
 	height: fit-content;
+}
+
+.class_scheadule {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 5px;
+	border-bottom: #999 solid 1px;
+	margin-top: 20px;
+}
+
+.class_item:not(:first-of-type) {
+	margin-top: 40px;
+}
+
+.class_item-body {
+	padding: 24px 20px 24px;
+	width: 100%;
+	height: fit-content;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.class_item-header {
+	width: 475px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.class_item-link {
+	font-weight: 500;
+	font-size: 12px;
+	position: relative;
+}
+
+.ongoing .class_item-link::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 65px;
+	transform: translate(-50%, -50%);
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: #398C9E;
+}
+
+.ongoing .class_item-link::after {
+	content: "On Going";
+	font-weight: 600;
+	font-size: 12px;
+	color: #398C9E;
+	margin-left: 30px;
+}
+
+.class_item-join {
+	font-weight: 600;
+	font-size: 12px;
+	color: #9E9439;
+	text-decoration: none;
 }
