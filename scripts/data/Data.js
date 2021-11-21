@@ -20,3 +20,20 @@ const homeAssignmentData = [
 		"subjectClass": "matematika"
 	}
 ]
+
+const homeClassScheadule = [
+	{
+		"subject": "IPS",
+		"start": "08.00",
+		"end": "08.50",
+		"link": "https://meet.google.com/cdfvrgbth",
+		"ongoing": true
+	},
+	{
+		"subject": "Kimia",
+		"start": "09.00",
+		"end": "09.30",
+		"link": "https://meet.google.com/esfftfdgr",
+		"ongoing": false
+	}
+]

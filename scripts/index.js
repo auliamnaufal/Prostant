@@ -1,4 +1,5 @@
 const assignmentListElement = document.querySelector(".assignment_list")
+const assignmentClassList = document.querySelector(".class_item")
 
 homeAssignmentData.forEach(assignment => {
 	assignmentListElement.innerHTML += `
@@ -12,6 +13,20 @@ homeAssignmentData.forEach(assignment => {
 			<div class="assignment_detail">
 				<a href="#" class="see_detail">See Assignment</a>
 			</div>
+		</div>
+	`
+})
+
+homeClassScheadule.forEach(classItem => {
+		assignmentClassList.innerHTML += `
+		<div class="class_item-body">
+			<div class="class_item-time">
+				<p>${classItem.subject} (${classItem.start} - ${classItem.end})</p>
+			</div>
+			<div class="class_item-header ${classItem.ongoing ? "ongoing" : ""}">
+				<h3 class="class_item-link">${classItem.link}</h3>
+			</div>
+			<a href="#" class="class_item-join">Join Class</a>
 		</div>
 	`
 })
