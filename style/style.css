@@ -400,6 +400,22 @@ nav .navbar {
 	background-color: #E4CCEA;
 }
 
+.kimia {
+	background-color: #F5CCBF;
+}
+
+.kimia .assignment_detail {
+	background-color: #e4c0b4;
+}
+
+.fisika {
+	background-color: #B9E7B5;
+}
+
+.fisika .assignment_detail {
+	background-color: #b1dbad;
+}
+
 
 .calendar {
   width: 100%;
