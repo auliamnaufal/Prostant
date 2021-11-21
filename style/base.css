@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-columns: 100vw 0;
   width: 100vw;
-  height: fit-content;
+  min-height: 100vh;
 }
 
 nav {
