@@ -14,11 +14,6 @@ const homeAssignmentData = [
 		"subject": "Biologi",
 		"subjectClass": "biologi"
 	},
-	{
-		"title": "Bentuk-Bentuk Persamaan Logaritma",
-		"subject": "Matematika",
-		"subjectClass": "matematika"
-	}
 ]
 
 const homeClassScheadule = [
