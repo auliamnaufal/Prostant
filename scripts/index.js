@@ -34,6 +34,7 @@ homeClassScheadule.forEach(classItem => {
 const openClassModalBtn = document.getElementById('openClassModal')
 const classModal = document.getElementById('classModal')
 const addClassBtn = document.getElementById('addClassBtn')
+const closeClassModal = document.getElementById('closeClassModal')
 
 openClassModalBtn.addEventListener('click', () => {
 	classModal.style.display = 'block'
@@ -44,9 +45,18 @@ window.addEventListener('click', (e) => {
 	console.log(e.target)
 	if (e.target == classModal) {
 		classModal.style.display = 'none'
+		document.querySelector('nav').style.zIndex = "0"
 	}
 })
 
 addClassBtn.addEventListener('click', () => {
 	classModal.style.display = 'none'
+	document.querySelector('nav').style.zIndex = "0"
+
+})
+
+closeClassModal.addEventListener('click', () => {
+	classModal.style.display = 'none'
+	document.querySelector('nav').style.zIndex = "0"
+
 })

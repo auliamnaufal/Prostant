@@ -792,3 +792,13 @@ nav .navbar {
 		opacity: 1
 	}
 }
+
+.close_class-modal {
+	padding: 5px;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 7%;
+	right: 3%;
+	cursor: pointer;
+}
