@@ -30,3 +30,22 @@ homeClassScheadule.forEach(classItem => {
 		</div>
 	`
 })
+
+const openClassModalBtn = document.getElementById('openClassModal')
+const classModal = document.getElementById('classModal')
+const addClassBtn = document.getElementById('addClassBtn')
+
+openClassModalBtn.addEventListener('click', () => {
+	classModal.style.display = 'block'
+})
+
+window.addEventListener('click', (e) => {
+	console.log(e.target)
+	if (e.target == classModal) {
+		classModal.style.display = 'none'
+	}
+})
+
+addClassBtn.addEventListener('click', () => {
+	classModal.style.display = 'none'
+})

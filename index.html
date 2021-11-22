@@ -42,9 +42,17 @@
           </div>
           <div class="page_bar">
             <div class="notification_logo">
-              <img src="./public/icon/notification.svg" alt="notification logo">
+              <img
+                src="./public/icon/notification.svg"
+                alt="notification logo"
+              />
             </div>
-            <img src="./public/icon/profile.jpeg" alt="profile picture" class="bar_profile-picture">
+            <img
+              src="./public/icon/profile.jpeg"
+              alt="profile picture"
+              class="bar_profile-picture"
+              id="profileBtn"
+            />
           </div>
         </header>
 
@@ -56,23 +64,52 @@
               <h2>Your Assignment</h2>
               <a href="#">See More &#8594;</a>
             </div>
-            <div class="assignment_list">
+            <div class="assignment_list"></div>
+          </div>
 
+          <calender-section></calender-section>
+
+          <div class="class">
+            <h2 class="class_heading">Class</h2>
+            <img
+              class="add_class-btn"
+              src="./public/icon/plus.svg"
+              alt="plus button"
+              id="openClassModal"
+            />
+            <div class="class_list">
+              <div class="class_item">
+                <p class="class_scheadule">Today</p>
+              </div>
             </div>
           </div>
 
-        <calender-section></calender-section>
-        
-        <div class="class">
-          <h2 class="class_heading">Class</h2>
-          <img class="add_class-btn" src="./public/icon/plus.svg" alt="plus button"/>
-          <div class="class_list">
-            <div class="class_item">
-              <p class="class_scheadule">Today</p>
-            
-            </div>
-        </div>
+          <div id="classModal" class="class_modal">
+            <div class="modal_content">
+              <h2 class="class_modal-heading">Add Class</h2>
+              <div class="class_modal-input">
+                <div class="lesson">
+                  <label for="lesson">Lesson</label>
+                  <input type="text" name="lesson" />
+                </div>
+                <div class="date">
+                  <label for="date">Date</label>
+                  <input type="date" name="date" />
+                </div>
+                <div class="time">
+                  <label for="time">Time</label>
+                  <input type="time" name="time" />
+                </div>
+                <div class="link">
+                  <label for="link">Link</label>
+                  <input type="text" name="link" />
+                </div>
+              </div>
 
+              <button id="addClassBtn" class="btn_add-class">Add</button>
+            </div>
+          </div>
+          
         </section>
       </main>
       <aside></aside>
