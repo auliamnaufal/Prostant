@@ -37,6 +37,7 @@ const addClassBtn = document.getElementById('addClassBtn')
 
 openClassModalBtn.addEventListener('click', () => {
 	classModal.style.display = 'block'
+	document.querySelector('nav').style.zIndex = "-1"
 })
 
 window.addEventListener('click', (e) => {
