@@ -14,21 +14,38 @@ const homeAssignmentData = [
 		"subject": "Biologi",
 		"subjectClass": "biologi"
 	},
+	{
+		"title": "Praktek Kimia, Larutan Elektrolit dan Nonelektrolit",
+		"subject": "Kimia",
+		"subjectClass": "kimia"
+	},
+	{
+		"title": "Menghitung Titik Berat Pada Suatu Benda",
+		"subject": "Fisika",
+		"subjectClass": "fisika"
+	},
 ]
 
 const homeClassScheadule = [
 	{
 		"subject": "IPS",
-		"start": "08.00",
-		"end": "08.50",
+		"start": "07.00",
+		"end": "08.45",
 		"link": "https://meet.google.com/cdfvrgbth",
 		"ongoing": true
 	},
 	{
 		"subject": "Kimia",
-		"start": "09.00",
-		"end": "09.30",
+		"start": "08.45",
+		"end": "09.45",
 		"link": "https://meet.google.com/esfftfdgr",
 		"ongoing": false
-	}
+	},
+	{
+		"subject": "MTK",
+		"start": "09.45",
+		"end": "10.45",
+		"link": "https://meet.google.com/hhgfqvtbh",
+		"ongoing": false
+	},
 ]
