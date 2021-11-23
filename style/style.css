@@ -309,6 +309,11 @@ nav .navbar {
 	border-radius: 17px;
 }
 
+/* .assignment_list::-webkit-scrollbar {
+	display: none;
+
+} */
+
 .assignment_item {
 	min-height: 90px;
 	position: relative;

@@ -44,7 +44,7 @@
             <div class="notification_logo">
               <img src="./public/icon/Search.svg" alt="search logo">
             </div>
-            <img src="./public/image/profile.jpeg" alt="profile picture" class="bar_profile-picture">
+            <img src="./public/image/profile.jpeg" alt="profile picture" class="bar_profile-picture" id="profileBtn">
           </div>
         </header>
 
@@ -123,13 +123,72 @@
 
         </section>
 
+        <div class="side_profile-body">
+          <div class="side_profile-avatar">
+            <img src="./public/image/profile.jpeg" alt="avatar" class="profile_avatar-picture" id="profileBtn">
+            <h2 class="profile_avatar-name">Jeje Rashid</h2>
+            <p class="profile_avatar-email">jejerashid@gmail.com</p>
+          </div>
+          
+          <div class="side_profile" id="sideProfile">
+            <div class="side_profile-content">
+              <img src="./public/icon/close_button.svg" alt="close button" class="close_class-profile" id="closeClassProfile">
+  
+    
+              <div class="side_profile-body">
+                <div class="side_profile-avatar">
+                  <img src="./public/image/profile.jpeg" alt="avatar" class="profile_avatar-picture">
+                  <h2 class="profile_avatar-name">Jeje Rashid</h2>
+                  <p class="profile_avatar-email">jejerashid@gmail.com</p>
+                </div>
+                
+                <div class="side_profile-level">
+                  <h3 class="profile_level-heading">Your Level</h3>
+                  <div class="level_detail">
+                    <p class="profile_level-level">20</p>
+                    <div class="profile_level-bar"></div>
+                  </div>
+                </div>
+                
+                <div class="side_profile-list">
+                  <div class="profile_item">
+                    <img src="./public/icon/trophy.svg" alt="trophy icon">
+                    <h3>Exchange Reward</h3>
+                  </div>
+                  <div class="profile_item">
+                    <img src="./public/icon/Premium.svg" alt="trophy icon">
+                    <h3>Buy Premium</h3>
+                  </div>
+                </div>
+  
+                <div class="logout">
+                  <h3>Logout</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </main>
     </div>
 
-    <script src="./scripts/data/Data.js"></script>
-    <script type="module" src="./scripts/index.js"></script>
-    <script src="./scripts/components/navbar.js"></script>
-    <script src="./scripts/components/calender.js"></script>
-    <script src="./scripts/components/statistic.js"></script>
+    <script>
+      const sideProfileElement = document.getElementById('sideProfile')
+      const sideProfileBtnElement = document.getElementById('profileBtn')
+      const sideProfileBtnCloseElement = document.getElementById('closeClassProfile')
+
+      sideProfileBtnElement.addEventListener('click', () => {
+        sideProfileElement.style.display = 'flex'
+      })
+
+      sideProfileBtnCloseElement.addEventListener('click', () => {
+        sideProfileElement.style.display = 'none'
+      })
+
+      window.addEventListener('click', (e) => {
+        if (e.target == sideProfileElement) {
+          sideProfileElement.style.display = 'none'
+        }
+      })
+    </script>
   </body>
 </html>
