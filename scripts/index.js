@@ -60,3 +60,16 @@ closeClassModal.addEventListener('click', () => {
 	document.querySelector('nav').style.zIndex = "0"
 
 })
+
+const sideProfileElement = document.getElementById('sideProfile')
+const sideProfileBtnElement = document.getElementById('profileBtn')
+
+sideProfileBtnElement.addEventListener('click', () => {
+	sideProfileElement.style.display = 'flex'
+})
+
+window.addEventListener('click', (e) => {
+	if (e.target == sideProfileElement) {
+		sideProfileElement.style.display = 'none'
+	}
+})
