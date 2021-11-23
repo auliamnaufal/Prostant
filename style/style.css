@@ -817,6 +817,7 @@ nav .navbar {
 }
 
 .side_profile-content {
+	position: relative;
 	background-color: rgba(23, 27, 53, 0.8);
 	backdrop-filter: blur(8px);
 	width: 30%;
@@ -828,6 +829,18 @@ nav .navbar {
 	align-items: center;
 	transform: translate(0 , 0);
 	animation: slideIn .3s;
+}
+
+.close_class-profile {
+	position: absolute;
+	top: 4%;
+	right: 7%;
+	width: 42px;
+	height: 42px;
+	padding: 12px;
+	background-color: #878787;
+	border-radius: 100px;
+	cursor: pointer;
 }
 
 .side_profile-body {

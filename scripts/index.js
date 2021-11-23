@@ -63,9 +63,14 @@ closeClassModal.addEventListener('click', () => {
 
 const sideProfileElement = document.getElementById('sideProfile')
 const sideProfileBtnElement = document.getElementById('profileBtn')
+const sideProfileBtnCloseElement = document.getElementById('closeClassProfile')
 
 sideProfileBtnElement.addEventListener('click', () => {
 	sideProfileElement.style.display = 'flex'
+})
+
+sideProfileBtnCloseElement.addEventListener('click', () => {
+	sideProfileElement.style.display = 'none'
 })
 
 window.addEventListener('click', (e) => {
