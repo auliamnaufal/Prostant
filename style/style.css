@@ -795,9 +795,12 @@ nav .navbar {
 }
 
 .close_class-modal {
-	padding: 5px;
-	width: 35px;
-	height: 35px;
+	width: 42px;
+	height: 42px;
+	padding: 12px;
+	background-color: #878787;
+	border-radius: 100px;
+	cursor: pointer;
 	position: absolute;
 	top: 7%;
 	right: 3%;
@@ -938,9 +941,9 @@ nav .navbar {
 
 .profile_item h3{
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 16px;
 	color: #ffffff;
-	width: 120px;
+	width: 100px;
 }
 
 .profile_item img {
