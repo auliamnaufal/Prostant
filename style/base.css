@@ -24,7 +24,7 @@ body {
 
 nav {
   width: 80px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   background-color: var(--secondary);
   z-index: 100;
