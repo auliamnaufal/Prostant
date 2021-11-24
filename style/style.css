@@ -1023,9 +1023,9 @@ nav .navbar {
   transform-style: preserve-3d;
 }
 
-.task_list_item:hover .inner_list_item {
+/* .task_list_item:hover .inner_list_item {
   transform: rotateY(180deg);
-}
+} */
 
 .flip_front, .flip_back {
   position: absolute;
@@ -1084,6 +1084,12 @@ nav .navbar {
 	color: white;
 	font-weight: 600;
 	margin-top: 20px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.flip_back button:hover {
+	background-color: #3949d8;
 }
 
 .add_file + .choose_file {
@@ -1096,6 +1102,14 @@ nav .navbar {
 	border: 1px solid #c4c4c4;
 	border-radius: 35px;
   display: inline-block;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.choose_file:hover {
+	color: #fff;
+	background-color: #1e2ba4;
+	border: 1px solid transparent;
 }
 
 .add_link {

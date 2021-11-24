@@ -203,14 +203,14 @@
                     <input type="file" name="file" id="file" class="add_file">
                     <label for="file" class="choose_file">add file</label>
                     <p>or</p>
-                    <input class="add_link" type="text" placeholder="Add Link">
+                    <input class="add_link" type="url" placeholder="Add Link">
                     <button>Submit</button>
                   </div>
                 </div>
               </div>
 
-              <div class="task_list_item">
-                <div class="inner_list_item">
+              <div class="task_list_item" id="taskListItem">
+                <div class="inner_list_item" id="innerTaskItem">
                   <div class="flip_front">
                     <h3 class="task_list_item-heading">Jelaskan Apa Itu Sistem Ekonomi Dan Macam-Macamnya</h3>
                     <div class="task_info">
@@ -223,7 +223,7 @@
                     <label for="file" class="choose_file">add file</label>
                     <p>or</p>
                     <input class="add_link" type="text" placeholder="Add Link">
-                    <button>Submit</button>
+                    <button id="submitTask">Submit</button>
                   </div>
                 </div>
               </div>
@@ -279,6 +279,10 @@
       const sideProfileBtnElement = document.getElementById('profileBtn')
       const sideProfileBtnCloseElement = document.getElementById('closeClassProfile')
 
+      const taskListItemElement = document.getElementById('taskListItem')
+      const innerTaskitemElement = document.getElementById('innerTaskItem')
+      const taskItemButtonElement = document.getElementById('submitTask')
+
       sideProfileBtnElement.addEventListener('click', () => {
         sideProfileElement.style.display = 'flex'
       })
@@ -292,6 +296,15 @@
           sideProfileElement.style.display = 'none'
         }
       })
+
+      taskListItemElement.addEventListener('click', () => {
+        innerTaskitemElement.style.transform = 'rotateY(180deg)'
+      })
+
+      taskListItemElement.addEventListener('mouseleave', () => {
+        innerTaskitemElement.style.transform = 'rotateY(0)'
+      })
+
     </script>
   </body>
 </html>
