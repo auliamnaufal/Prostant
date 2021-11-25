@@ -28,7 +28,12 @@
 					</a>
         </li>
         <li class="nav_item nav_active">
-          <img src="./public/icon/Paper.svg" id="task" alt="Paper.svg Icon" />
+          <img src="./public/icon/Paper.svg" id="task" alt="Paper Icon" />
+        </li>
+        <li class="nav_item">
+          <a href="./achivement.html">
+            <img src="./public/icon/achivement.svg" id="achivement" alt="achivement Icon" />
+          </a>
         </li>
       </ul>
     </nav>
@@ -234,45 +239,12 @@
 
         </section>
           
-          <div class="side_profile" id="sideProfile">
-            <div class="side_profile-content">
-              <img src="./public/icon/close_button.svg" alt="close button" class="close_class-profile" id="closeClassProfile">
-    
-              <div class="side_profile-body">
-                <div class="side_profile-avatar">
-                  <img src="./public/image/profile.jpeg" alt="avatar" class="profile_avatar-picture">
-                  <h2 class="profile_avatar-name">Jeje Rashid</h2>
-                  <p class="profile_avatar-email">jejerashid@gmail.com</p>
-                </div>
-                
-                <div class="side_profile-level">
-                  <h3 class="profile_level-heading">Your Level</h3>
-                  <div class="level_detail">
-                    <p class="profile_level-level">20</p>
-                    <div class="profile_level-bar"></div>
-                  </div>
-                </div>
-                
-                <div class="side_profile-list">
-                  <div class="profile_item">
-                    <img src="./public/icon/trophy.svg" alt="trophy icon">
-                    <h3>Exchange Reward</h3>
-                  </div>
-                  <div class="profile_item">
-                    <img src="./public/icon/Premium.svg" alt="trophy icon">
-                    <h3>Buy Premium</h3>
-                  </div>
-                </div>
-  
-                <div class="logout">
-                  <h3>Logout</h3>
-                </div>
-              </div>
-            </div>
-          </div>
+        <side-profile-section></side-profile-section>
 
+      </div>
       </main>
-    </div>
+      
+    <script src="./scripts/components/sideProfile.js"></script>
 
     <script>
       const sideProfileElement = document.getElementById('sideProfile')
