@@ -26,11 +26,7 @@ class SideProfile extends HTMLElement {
                 
                 <div class="side_profile-list">
                   <div class="profile_item">
-                    <img src="./public/icon/trophy.svg" alt="trophy icon">
-                    <h3>Exchange Reward</h3>
-                  </div>
-                  <div class="profile_item">
-                    <img src="./public/icon/Premium.svg" alt="trophy icon">
+                    <img src="./public/icon/premium.jpeg" alt="trophy icon">
                     <h3>Buy Premium</h3>
                   </div>
                 </div>
