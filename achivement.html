@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./public/icon/logo.svg" type="image/x-icon" />
-    <title>Task | Prostant</title>
+    <title>Achivement | Prostant</title>
   </head>
   <body>
     <nav>
@@ -34,6 +34,11 @@
         </li>
         <li class="nav_item nav_active">
             <img src="./public/icon/achivement.svg" id="achivement" alt="achivement Icon" />
+        </li>
+        <li class="nav_item">
+          <a href="./profile.html">
+            <img src="./public/icon/profile-icon.svg" id="profile" alt="Profile Icon" />
+          </a>
         </li>
       </ul>
     </nav>
@@ -63,7 +68,7 @@
                 <div class="achivement_item_img">
                   <img src="./public/image/achivement-bindo1.png" alt="Bahasa Indonesia">
                   </div>
-                <div class="achivement_item_progress" style="background: linear-gradient( to right,#091353 70%, #E0DCDC 20% 40%);"></div>
+                <div class="achivement_item_progress" style="background: linear-gradient( to right,#091353 100%, #E0DCDC 20% 40%);"></div>
               </div>
 
               <div class="achivement_item b_indo lock">
@@ -192,10 +197,6 @@
       const sideProfileElement = document.getElementById('sideProfile')
       const sideProfileBtnElement = document.getElementById('profileBtn')
       const sideProfileBtnCloseElement = document.getElementById('closeClassProfile')
-
-      const taskListItemElement = document.querySelectorAll('#taskListItem')
-      const innerTaskitemElement = document.querySelectorAll('#innerTaskItem')
-      const taskItemButtonElement = document.querySelectorAll('#submitTask')
 
       sideProfileBtnElement.addEventListener('click', () => {
         sideProfileElement.style.display = 'flex'
