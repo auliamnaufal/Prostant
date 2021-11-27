@@ -1050,7 +1050,6 @@ nav .navbar {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-	cursor: pointer;
 }
 
 /* .task_list_item:hover .inner_list_item {
@@ -1070,6 +1069,7 @@ nav .navbar {
 .flip_front {
   background-color: #ffffff;
 	text-align: left;
+	cursor: pointer;
 }
 
 .flip_back {
@@ -1079,6 +1079,7 @@ nav .navbar {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	cursor: default;
 }
 
 .flip_back > * {
