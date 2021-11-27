@@ -81,6 +81,7 @@
 	justify-content: center;
 	margin-bottom: 20px;
 	padding-bottom: 30px;
+	text-align: center;
 }
 
 .level_detail .profile_level-level {
@@ -88,7 +89,9 @@
 	font-size: 24px;
 	color: #ffffff;
 	background-color: #39a9a9;
-	padding: 10px 12px;
+	width: 55px;
+	height: 55px;
+	padding: 10px 17px;
 	border-radius: 100%;
 	margin-right: 10px;
 }
@@ -163,23 +166,6 @@
 	height: 70px;
 	margin-right: 10px;
 	border-radius: 100%;
-}
-
-.logout {
-	position: absolute;
-	left: 50%;
-	bottom: -1%;
-	transform: translate(-50%, -50%);
-	background-color: #D84141;
-	border-radius: 17px;
-	padding: 15px 30px;
-	cursor: pointer;
-}
-
-.logout h3 {
-	color: #fff;
-	font-weight: 600;
-	font-size: 15px;
 }
 
 @keyframes slideIn {

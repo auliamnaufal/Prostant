@@ -19,7 +19,7 @@ class SideProfile extends HTMLElement {
                 <div class="side_profile-level">
                   <h3 class="profile_level-heading">Your Level</h3>
                   <div class="level_detail">
-                    <p class="profile_level-level">20</p>
+                    <p class="profile_level-level">10</p>
                     <div class="profile_level-bar"></div>
                   </div>
                 </div>
@@ -30,10 +30,7 @@ class SideProfile extends HTMLElement {
                     <h3>Buy Premium</h3>
                   </div>
                 </div>
-  
-                <div class="logout">
-                  <h3>Logout</h3>
-                </div>
+
               </div>
           </div>
 		`
