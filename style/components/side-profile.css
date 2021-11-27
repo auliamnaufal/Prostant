@@ -176,3 +176,10 @@
 		transform: translateX(0); 
 	}
 }
+
+@media screen and (max-width: 425px) {
+	.side_profile-content {
+		width: 370px;
+		height: 60%;
+	}
+}

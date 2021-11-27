@@ -235,6 +235,7 @@
 	max-height: 330px;
 	overflow-y: scroll;
 	border-radius: 17px;
+	overflow-x: hidden;
 }
 
 .assignment_item {
@@ -261,7 +262,7 @@
 }
 
 .assignment_item_title {
-	width: 410px;
+	width: 30vw;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -742,7 +743,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 835px) {
 
 	.panel_body {
 		position: relative;
@@ -753,6 +754,10 @@
 		height: 100%;
 		display: grid;
 		grid-template-columns: 20px 1fr;
+	}
+
+	.assignment_item_title {
+		width: 60vw;
 	}
 
 	.value_item::after {
@@ -776,5 +781,15 @@
 
 	.class {
 		grid-column: 1 / 2;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	statistic-section {
+		display: none;
+	}
+
+	calender-section {
+		display: none;
 	}
 }
