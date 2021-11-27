@@ -738,3 +738,42 @@
 	right: 3%;
 	cursor: pointer;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+	.panel_body {
+		position: relative;
+		left: 0;
+		margin-top: 5px;
+		padding: 30px 20px;
+		width: 98.5%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 20px 1fr;
+	}
+
+	.value_item::after {
+		left: 12%;
+		margin-top: 10px;
+		width: 80%;
+	}
+
+	.statistic_detail {
+		display: none;
+	}
+
+	.home_body {
+		width: 100%;
+		grid-template-columns: 100%;
+	}
+
+	calender-section {
+		grid-column: 1 / 2;
+	}
+
+	.class {
+		grid-column: 1 / 2;
+	}
+}
