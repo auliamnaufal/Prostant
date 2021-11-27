@@ -1,2 +1,9 @@
 @import "./base.css";
-@import "./style.css"
+
+@import './pages/achivement.css';
+@import './pages/dashboard.css';
+@import './pages/profile.css';
+@import './pages/task.css';
+
+@import './components/navbar.css';
+@import './components/side-profile.css';

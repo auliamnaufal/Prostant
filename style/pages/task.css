@@ -1,0 +1,164 @@
+.task_body {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+	grid-gap: 50px;
+}
+
+.task_list {
+	border-radius: 17px;
+	padding: 24px;
+}
+
+.task_list-title {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.task_list_item-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	grid-gap: 30px;
+	height: fit-content;
+}
+
+.task_list_item {
+	height: 320px;
+	background-color: transparent;
+	perspective: 1000px;
+}
+
+.inner_list_item {
+	position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* .task_list_item:hover .inner_list_item {
+  transform: rotateY(180deg);
+} */
+
+.flip_front, .flip_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+	border-radius: 17px;
+	padding: 24px;
+
+}
+
+.flip_front {
+  background-color: #ffffff;
+	text-align: left;
+	cursor: pointer;
+}
+
+.flip_back {
+  background-color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: default;
+}
+
+.flip_back > * {
+  margin: 10px 0;
+}
+
+.flip_back label {
+  font-size: 1rem;
+	font-weight: 500;
+	color: #000;
+}
+
+.flip_back .add_file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.flip_back p {
+	font-size: 14px;
+	color: #b0b0b0;
+}
+
+.flip_back button {
+	background-color: #1e2ba4;
+	border-radius: 17px;
+	padding: 15px 30px;
+	border: none;
+	outline: none;
+	color: white;
+	font-weight: 600;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.flip_back button:hover {
+	background-color: #3949d8;
+}
+
+.add_file + .choose_file {
+	font-size: 1em;
+  font-weight: 600;
+	width: 170px;
+  color: #1e2ba4;
+  background-color: transparent;
+	padding: 15px 25px;
+	border: 1px solid #c4c4c4;
+	border-radius: 35px;
+  display: inline-block;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.choose_file:hover {
+	color: #fff;
+	background-color: #1e2ba4;
+	border: 1px solid transparent;
+}
+
+.add_link {
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 0 0 10px;
+}
+
+.task_list_item-heading {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.task_info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #C4C4C4;
+	margin-top: 10px;
+	position: absolute;
+	bottom: 25px;
+	left: 24px;
+}
+
+.task_info img {
+	filter: invert(83%) sepia(0%) saturate(0%) hue-rotate(223deg) brightness(97%) contrast(88%);
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+}
+
+.task_info p {
+	font-size: 14px;
+}
