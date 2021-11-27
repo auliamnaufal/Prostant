@@ -62,8 +62,17 @@ nav .navbar {
     brightness(94%) contrast(111%);
 }
 
+@media screen and (max-width: 768px) {
+	.navbar .nav_item {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 425px) {
 	nav {
 		display: none;
 	}
 }
+
+
+

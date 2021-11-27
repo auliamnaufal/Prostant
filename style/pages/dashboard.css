@@ -743,6 +743,7 @@
 
 
 @media screen and (max-width: 768px) {
+
 	.panel_body {
 		position: relative;
 		left: 0;
