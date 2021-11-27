@@ -11,7 +11,7 @@ homeAssignmentData.forEach(assignment => {
 				<p class="assignment_item_subject">${assignment.subject}</p>
 			</div>
 			<div class="assignment_detail">
-				<a href="#" class="see_detail">See Assignment</a>
+				<a href="./task.html" class="see_detail">See Assignment</a>
 			</div>
 		</div>
 	`
