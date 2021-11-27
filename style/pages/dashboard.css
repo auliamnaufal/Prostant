@@ -1,4 +1,56 @@
-statistic {
+.header {
+	max-width: 1530px;
+  margin: 0 auto;
+	margin-bottom: 50px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.page_heading h1 {
+	font-size: 2.5vw;
+	font-weight: 700;
+	color: var(--secondary);
+}
+
+.page_heading h1 span {
+	font-weight: 300;
+}
+
+.page_heading p {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #a9a8a8;
+	margin-top: 5px;
+}
+
+.page_bar {
+	display: flex;
+}
+
+.page_bar .notification_logo {
+	width: 48px;
+	height: 48px;
+	background-color: #fff;
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	margin-right: 24px;
+}
+
+.notification_logo img{
+	width: 30px;
+	height: 30px;
+}
+
+.page_bar .bar_profile-picture {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.statistic {
 	background-color: #fff;
 	min-height: 300px;
 	border-radius: 20px;
@@ -6,7 +58,8 @@ statistic {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 20px;
+	max-width: 1530px;
+	margin: 45px auto;
 }
 
 .statistic .panel {
@@ -93,6 +146,7 @@ statistic {
 .body_item .item_data {
 	transform-origin: top;
 	width: 3.5vw;
+	max-width: 50px;
 	height: 170px;
 	border-radius: 20px;
 }
@@ -139,12 +193,14 @@ statistic {
 */
 
 .home_body {
+	max-width: 1530px;
 	width: 100%;
 	min-height: 300px;
 	display: grid;
 	grid-template-columns: calc(50% - 25px) calc(50% - 25px);
 	grid-gap: 50px;
 	margin-top: 50px;
+	margin: 0 auto;
 }
 
 .assignment {

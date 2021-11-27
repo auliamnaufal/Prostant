@@ -1,5 +1,7 @@
 .task_body {
 	width: 100%;
+	max-width: 1530px;
+	margin: 0 auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 	grid-gap: 50px;

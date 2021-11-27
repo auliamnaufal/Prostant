@@ -1,4 +1,6 @@
 .achivement_list {
+	margin: 0 auto;
+	max-width: 1530px;
 	width: 100%;
 	height: fit-content;
 }
